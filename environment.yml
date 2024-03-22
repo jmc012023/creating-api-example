@@ -1,0 +1,9 @@
+name: app
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - conda-forge::fastapi
+  - conda-forge::uvicorn
+prefix: /home/someone/miniconda3/envs/app

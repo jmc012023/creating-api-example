@@ -1,0 +1,22 @@
+###
+GET http://localhost:8000/translated/ HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:8000/translated/title/Pyre HTTP/1.1
+###
+GET http://localhost:8000/translated/title/Time Shelter HTTP/1.1
+###
+GET http://localhost:8000/translated/name/Angela Rodel HTTP/1.1
+###
+GET http://localhost:8000/translated/name/Aniruddhan Vasudevan HTTP/1.1
+
+###
+POST http://localhost:8000/translated/?b_id=3&t_id=3 HTTP/1.1
+
+###
+PUT http://localhost:8000/translated/update/book/4?t_id=3&b_id=3
+###
+PUT http://localhost:8000/translated/update/translator/3?t_id=2&b_id=3
+
+###
+DELETE http://localhost:8000/translated/delete/?b_id=3&t_id=3

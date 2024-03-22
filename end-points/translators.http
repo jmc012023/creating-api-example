@@ -1,0 +1,55 @@
+
+GET http://localhost:8000/translators/ HTTP/1.1
+content-type: application/json
+###
+
+
+GET http://localhost:8000/translators/id/?id=1 HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:8000/translators/id/?id=2 HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:8000/translators/name/Angela Rodel HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:8000/translators/name/Aniruddhan Vasudevan HTTP/1.1
+content-type: application/json
+###
+POST http://localhost:8000/translators/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Stephen King"
+}
+###
+POST http://localhost:8000/translators/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Jose Saramago"
+}
+###
+
+PUT http://localhost:8000/translators/update/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": 3,
+    "name": "somebody"
+}
+###
+PUT http://localhost:8000/translators/update/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": 3,
+    "name": "Stephen King"
+}
+
+###
+
+DELETE http://localhost:8000/translators/?id=3 HTTP/1.1
+content-type: application/json
+
+
